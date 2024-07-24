@@ -15,7 +15,7 @@ namespace Proj1_EntityFramework
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=SchoolDb;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Data Source=DUC;Initial Catalog=SchoolDb;Integrated Security=True;Trust Server Certificate=True");
         }
     }
 }

@@ -19,6 +19,10 @@
                 //save data to the database tables
                 context.SaveChanges();
 
+                //var vd1 = context.Grades.Find("1st Grade");
+                //context.Grades.Remove(vd1);
+                //context.SaveChanges();
+
                 //retrieve all the students from the database
                 foreach (var s in context.Students)
                 {
